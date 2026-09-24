@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Topic</title>
+  <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body>
+  <main class="panel form-shell">
+    <p class="eyebrow">Authorized users only</p>
+    <h1>Create New Topic</h1>
+    <form id="topicForm" novalidate>
+      <label>Topic name<input type="text" name="name" required maxlength="100"></label>
+      <label>Description<textarea name="description" required maxlength="256" rows="5"></textarea></label>
+      <button class="button primary" type="submit">Save Topic</button>
+    </form>
+    <div id="topicResult" class="notice hidden"></div>
+    <p class="small-links"><a href="menu">Main menu</a> · <a href="messages">Send message</a></p>
+  </main>
+  <script src="js/new-topic.js"></script>
+</body>
+</html>

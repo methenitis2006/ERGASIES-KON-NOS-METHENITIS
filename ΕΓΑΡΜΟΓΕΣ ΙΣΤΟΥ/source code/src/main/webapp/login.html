@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body>
+  <main class="panel form-shell">
+    <p class="eyebrow">Authorized area</p>
+    <h1>Login</h1>
+    <p class="lead">Enter your account details to continue to the main menu.</p>
+    <p id="loginError" class="error hidden"></p>
+    <form id="loginForm" action="login" method="post" novalidate>
+      <label>Username<input type="text" name="username" autocomplete="username" required></label>
+      <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
+      <div class="actions">
+        <button class="button primary" type="submit">Enter</button>
+        <a class="button secondary" href="index.html">Home</a>
+        <a class="button secondary" href="update-password.html">Update Password</a>
+      </div>
+    </form>
+  </main>
+  <script src="js/login.js"></script>
+</body>
+</html>
